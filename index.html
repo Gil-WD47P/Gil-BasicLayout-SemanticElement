@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Semantic Layout Exercise</title>
     <style>
-        .nav__link {
+      .nav__link {
         float: left;
         padding: 5px;
       }
       .clear {
         clear: both;
-        }
-    
-        
+      }
     </style>
-</head>
+  </head>
 
-<body style="padding:0; text-align:center;">
+  <body style="padding: 0; text-align: center">
     <!--Header Section-->
-    <header style="background-color: blue;padding:0;margin:0;">
-        <h1> Header</h1>
+    <header style="background-color: blue; padding: 0; margin: 0">
+      <h1>Header</h1>
     </header>
     <!--Navigation Section-->
-    <nav style="background-color: lightblue;padding:0;margin:0;height:20%;">
-        <ul style="list-style-type: none;height: 20px;">
-            <li class="nav__link"><a href="#"></a>Home</li>
-            <li class="nav__link"><a href="#"></a>About</li>
-            <li class="nav__link"><a href="#"></a>Contact</li>
-        </ul>
+    <nav
+      style="background-color: lightblue; padding: 0; margin: 0; height: 20%"
+    >
+      <ul style="list-style-type: none; height: 20">
+        <li class="nav__link"><a href="#"></a>Home</li>
+        <li class="nav__link"><a href="#"></a>About</li>
+        <li class="nav__link"><a href="#"></a>Contact</li>
+      </ul>
     </nav>
 
     <!--Main Section-->
-    <main style="background-color: pink;height:50%;">
+    <main style="background-color: pink; height: 50%">
+      <!-------Section 1------->
+      <h2>Main Content</h2>
+      <section style="background-color: pink; height: 50%">
+        <!--Article 1-->
+        <!--Aside-->
+        <aside
+          style="background-color: red; height: 100; width: 30%; float: right"
+        >
+          <h3>Aside</h3>
+          <ul>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+          </ul>
+          <ol>
+            <li>Ordered List item</li>
+            <li>Ordered List item</li>
+            <li>Ordered List item</li>
+            <li>Ordered List item</li>
+            <li>Ordered List item</li>
+          </ol>
 
-    <!-------Section 1------->
-    <!--Article 1-->
-    <!--Aside-->
+          <dl style="text-align: left">
+            <dt>Coffee</dt>
+            <dd>Hot and Cold</dd>
+            <dt>Milk Tea</dt>
+            <dd>Cold and Sweet</dd>
+          </dl>
+        </aside>
+        <!--Article 1-->
+        <h3>Section 1</h3>
+        <article  style="background-color: green;height: 50%;">
+            <h3>Article 1</h3>
+        </article>
+      </section>
 
-    <!-------Section 2------->
-    <!--Article 1-->
+      <!-------Section 2------->
+      <!--Article 1-->
 
-    <!--Footer Section-->
-
-
-</main>
-</body>
-
+      <!--Footer Section-->
+    </main>
+  </body>
 </html>
